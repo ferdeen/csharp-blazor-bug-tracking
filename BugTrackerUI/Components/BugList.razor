@@ -1,15 +1,15 @@
 ﻿<h3>All Bugs</h3>
 <table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Priority</th>
+    </tr>
+    </thead>
     @foreach (var bug in Bugs)
     {
-        <thead>
-        <tr>
-            <th>Id</th>
-            <th>Title</th>
-            <th>Description</th>
-            <th>Priority</th>
-        </tr>
-        </thead>
         <tr>
             <td>@bug.Id</td>
             <td>@bug.Title</td>
@@ -22,11 +22,10 @@
 
 @code {
     [Inject] public IBugService BugService { get; set; }
-    public List<Bug> Bugs { get; set; }
+    public IOrderedEnumerable<Bug> Bugs { get; set; }
 
-    protected void OnInitialized()
+    protected override void OnInitialized()
     {
-        Bugs = BugService.GetBugs();
-        Bugs.OrderBy(x => x.Priority);
+        Bugs = BugService.GetBugs().OrderBy(x => x.Priority);
     }
 }
