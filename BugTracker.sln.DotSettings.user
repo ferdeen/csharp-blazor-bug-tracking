@@ -1,0 +1,11 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0f69596e_002D9a46_002D4f63_002Da976_002D192caa5715ce/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Register the BugService @register-bug-service" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::25E352A8-4B94-4130-A4F0-331CFD3DA00E::.NETCoreApp,Version=v3.1::M4_BugTrackerUI.Tests.WorkingWithServicesAndData.M4_01_RegisterTheBugServiceTests.RegisterTheBugServiceTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c5dda80b_002D3b20_002D4cd6_002D9829_002Dac0fb0a44c13/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Register the BugService @register-bug-service #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::25E352A8-4B94-4130-A4F0-331CFD3DA00E::.NETCoreApp,Version=v3.1::M4_BugTrackerUI.Tests.WorkingWithServicesAndData.M4_01_RegisterTheBugServiceTests.RegisterTheBugServiceTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
