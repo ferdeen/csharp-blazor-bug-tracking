@@ -5,12 +5,20 @@
     <InputText @bind-value="@AddBug.Title" placeholder="Enter Title"></InputText>
     <InputText @bind-value="@AddBug.Description" placeholder="Enter Description"></InputText>
     <InputText  @bind-value="@AddBug.Priority" placeholder="Enter Priority"></InputText>
-    <button type="submit">Add Bug</button>
+    <button type="submit" onValidSubmit="HandleValidSubmit">Add Bug</button>
 </EditForm>
 
 @code
 {
     public Bug AddBug { get; set; } = new Bug();
+    [Inject] public IBugService BugService { get; set; }
+    [Inject] public NavigationManager NavService { get; set; }
+
+    protected void HandleValidSubmit()
+    {
+        BugService.AddBug(AddBug);
+        NavService.NavigateTo("");
+    }
 }
 
 
